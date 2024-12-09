@@ -1,14 +1,56 @@
-/* Style for the injected reminder button */
-button {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button:hover {
-    background-color: #e0e0e0;
-  }
-  
+/* Container styling */
+.popup-container {
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title styling */
+.popup-title {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  color: #333333;
+  text-align: center;
+}
+
+/* Label styling */
+.popup-label {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+/* Input styling */
+.popup-input {
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.popup-input:focus {
+  border-color: #007BFF;
+}
+
+/* Button styling */
+.popup-button {
+  background: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.popup-button:hover {
+  background: #0056b3;
+}
