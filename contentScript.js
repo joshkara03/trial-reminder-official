@@ -12,7 +12,7 @@ if (keywords.some(kw => pageText.includes(kw))) {
   reminderBtn.style.zIndex = '999999';
   
   reminderBtn.addEventListener('click', () => {
-    chrome.runtime.sendMessage({type: 'openPopup', url: window.location.href});
+    chrome.runtime.sendMessage({ type: 'setUrl', url: window.location.href });
   });
   
   document.body.appendChild(reminderBtn);
