@@ -34,13 +34,18 @@ serve(async (_req) => {
       body: JSON.stringify({
         from: 'onboarding@resend.dev', // Make sure this email is verified in your Re:Send dashboard
         to: reminder.email,
-        subject: 'Reminder: Cancel Your Trial',
-        text: `Hi,
+        subject: '🚨 Last Call: Trial Ending Soon! 🚨',
+        text: `Hey you!
 
-Your trial for ${reminder.url} is due today. If you don’t want to be charged, consider canceling it now.
+Your trial for ${reminder.url} is like a carton of milk—it’s expiring today. 🥛 If you don’t want to be charged and end up explaining random charges to your bank, now’s your moment to cancel.
+
+If you’re enjoying this reminder and want to support our noble cause (a.k.a. keeping me caffeinated), you can totally buy me a coffee. ☕ Like, literally:
+buymeacoffee.com/joshkarathra
+
+Either way, you’re awesome. Just don’t forget about that trial, okay?
 
 Best,
-Your Trial Reminder`
+Your Friendly Neighborhood Trial Reminder 🕶️`
       })
     })
 

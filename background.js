@@ -2,12 +2,12 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type === 'setReminder') {
     const { url, email, date } = message;
 
-    // Save the reminder to your database or API
+    // Save the reminder to Supabase
     fetch('https://shzvtjnenlpheqalpbjk.supabase.co/rest/v1/reminders', {
       method: 'POST',
       headers: {
-        'apikey': 'YOUR_SUPABASE_API_KEY',
-        'Authorization': 'Bearer YOUR_SUPABASE_API_KEY',
+        'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNoenZ0am5lbmxwaGVxYWxwYmprIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM3MTU5ODAsImV4cCI6MjA0OTI5MTk4MH0.013tlIzw3zkmyWBwLTparF9QFOZ2HVdrC54sGUyOzmk',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNoenZ0am5lbmxwaGVxYWxwYmprIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM3MTU5ODAsImV4cCI6MjA0OTI5MTk4MH0.013tlIzw3zkmyWBwLTparF9QFOZ2HVdrC54sGUyOzmk',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
