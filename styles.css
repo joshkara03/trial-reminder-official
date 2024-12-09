@@ -1,0 +1,14 @@
+/* Style for the injected reminder button */
+button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
